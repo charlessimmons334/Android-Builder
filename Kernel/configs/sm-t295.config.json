@@ -36,7 +36,6 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-",
         "CROSS_COMPILE_ARM32": "gcc-arm-c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad/bin/arm-eabi-",
         "LD": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-ld.lld",
