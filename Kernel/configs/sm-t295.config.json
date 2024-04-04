@@ -12,26 +12,20 @@
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
         "name": "proton-clang",
-        "binaryEnv": [
-          "bin"
-        ]
+        "binaryEnv": ["./bin"]
       },
       {
         "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
         "branch": "lineage-17.1",
         "name": "aarch64",
-        "binaryEnv": [
-          "bin"
-        ]
+        "binaryEnv": ["./bin"]
       },
       {
         "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
         "branch": "lineage-17.1",
         "name": "arm",
-        "binaryEnv": [
-          "bin"
-        ]
-      }
+        "binaryEnv": ["./bin"]
+      },
     ],
     "enableCcache": true,
     "params": {
