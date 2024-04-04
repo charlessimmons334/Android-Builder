@@ -52,7 +52,6 @@
         "LDGOLD": "gcc-arm64/bin/aarch64-elf-ld.gold",
         "LLVM_AR": "gcc-arm64/bin/llvm-ar",
         "LLVM_DIS": "proton-clang/bin/llvm-dis"
-        "LLD_LINK": "gcc-arm64/bin/lld-link"
       }
     },
     "AnyKernel3": {
