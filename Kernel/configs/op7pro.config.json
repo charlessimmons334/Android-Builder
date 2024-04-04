@@ -15,6 +15,7 @@
         "binaryEnv": ["./bin"]
       }
     ],
+    [
 {
         "repo": "https://github.com/Dhruvgera/EvaGCC-arm",
         "branch": "master",
