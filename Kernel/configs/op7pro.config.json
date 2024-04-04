@@ -24,9 +24,9 @@
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
         "name": "proton-clang",
-        "binaryEnv": ["./bin"]
-      }
-      ]  
+        "binaryEnv": ["./bin"],
+      },
+      ],  
     {
     "enableCcache": true,
     "params": {
