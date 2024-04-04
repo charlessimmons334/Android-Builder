@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "Oneplus7Pro",
-      "repo": "https://github.com/cyberknight777/nethunter_kernel_oneplus_sm8150.git",
+      "repo": "https://github.com/charlessimmons334/nethunter_kernel_oneplus_sm8150.git",
       "branch": "nethunter-11.0",
       "device": "sm-8150",
       "defconfig": "kali_defconfig"
