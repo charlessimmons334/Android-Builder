@@ -52,7 +52,6 @@
         "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
         "LLVM_AR": "proton-clang/bin/llvm-ar",
         "LLVM_DIS": "proton-clang/bin/llvm-dis"
-        "CONFIG_THINLTO": ""
       }
     },
     "AnyKernel3": {
