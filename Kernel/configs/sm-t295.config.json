@@ -13,7 +13,7 @@
         "branch": "master",
         "name": "proton-clang",
         "binaryEnv": [
-          "bin"
+          "./bin"
         ]
       },
       {
@@ -21,7 +21,7 @@
         "branch": "lineage-17.1",
         "name": "aarch64",
         "binaryEnv": [
-          "bin"
+          "./bin"
         ]
       },
       {
@@ -29,7 +29,7 @@
         "branch": "lineage-17.1",
         "name": "arm",
         "binaryEnv": [
-          "bin"
+          "./bin"
         ]
       }
     ],
@@ -39,8 +39,8 @@
       "CC": "gcc",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/bin/arm-linux-androideabi-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LD": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.bfd",
         "AR": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc-ar",
         "NM": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc-nm",
