@@ -36,11 +36,11 @@
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "EvaGCC-arm64/bin/aarch64-elf-gcc",
+      "CC": "aarch64-elf-gcc",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "aarch64-elf-gcc-",
-        "CROSS_COMPILE_ARM32": "arm-eabi-gcc-",
+        "CROSS_COMPILE": "EvaGCC-arm64/bin/aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "EvaGCC-arm/bin/arm-eabi-",
         "LD": "EvaGCC-arm64/bin/aarch64-elf-ld",
         "AR": "EvaGCC-arm64/bin/aarch64-elf-gcc-ar",
         "NM": "EvaGCC-arm64/bin/aarch64-elf-gcc-nm",
