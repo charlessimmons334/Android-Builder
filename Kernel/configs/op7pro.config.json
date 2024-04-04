@@ -13,19 +13,19 @@
         "branch": "master",
         "name": "EvaGCC-arm64",
         "binaryEnv": ["./bin"],
-    },
+    }
     {
         "repo": "https://github.com/Dhruvgera/EvaGCC-arm",
         "branch": "master",
         "name": "EvaGCC-arm",
         "binaryEnv": ["./bin"],
-    },
+    }
     {  
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
         "name": "proton-clang",
         "binaryEnv": ["./bin"],
-    },
+    }
   ],  
     {
     "enableCcache": true,
