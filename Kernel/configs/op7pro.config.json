@@ -9,9 +9,9 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/Dhruvgera/EvaGCC-arm64",
-        "branch": "master",
-        "name": "EvaGCC-arm64",
+        "repo": "https://github.com/mvaisakh/gcc-arm64",
+        "branch": "gcc-new",
+        "name": "gcc-arm64",
         "binaryEnv": [
           "./bin"
         ]
@@ -39,19 +39,20 @@
       "CC": "gcc",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "EvaGCC-arm64/bin/aarch64-elf-",
+        "CROSS_COMPILE": "gcc-arm64/bin/aarch64-elf-",
         "CROSS_COMPILE_ARM32": "EvaGCC-arm/bin/arm-eabi-",
-        "LD": "EvaGCC-arm64/bin/aarch64-elf-ld",
-        "AR": "EvaGCC-arm64/bin/aarch64-elf-gcc-ar",
-        "NM": "EvaGCC-arm64/bin/aarch64-elf-gcc-nm",
-        "OBJCOPY": "EvaGCC-arm64/bin/aarch64-elf-objcopy",
-        "OBJDUMP": "EvaGCC-arm64/bin/aarch64-elf-objdump",
-        "READELF": "EvaGCC-arm64/bin/aarch64-elf-readelf",
-        "OBJSIZE": "EvaGCC-arm64/bin/aarch64-elf-size",
-        "STRIP": "EvaGCC-arm64/bin/aarch64-elf-strip",
-        "LDGOLD": "EvaGCC-arm64/bin/aarch64-elf-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LD": "gcc-arm64/bin/aarch64-elf-ld",
+        "AR": "gcc-arm64/bin/aarch64-elf-gcc-ar",
+        "NM": "gcc-arm64/bin/aarch64-elf-gcc-nm",
+        "OBJCOPY": "gcc-arm64/bin/aarch64-elf-objcopy",
+        "OBJDUMP": "gcc-arm64/bin/aarch64-elf-objdump",
+        "READELF": "gcc-arm64/bin/aarch64-elf-readelf",
+        "OBJSIZE": "gcc-arm64/bin/aarch64-elf-size",
+        "STRIP": "gcc-arm64/bin/aarch64-elf-strip",
+        "LDGOLD": "gcc-arm64/bin/aarch64-elf-ld.gold",
+        "LLVM_AR": "gcc-arm64/bin/llvm-ar",
         "LLVM_DIS": "proton-clang/bin/llvm-dis"
+        "LLD_LINK": "gcc-arm64/bin/lld-link"
       }
     },
     "AnyKernel3": {
