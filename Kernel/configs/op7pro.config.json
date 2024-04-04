@@ -47,8 +47,8 @@
         "READELF": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-readelf",
         "OBJSIZE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-size",
         "STRIP": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-strip",
-      }
-    },
+       }
+     },
     "AnyKernel3": {
       "use": true,
       "release": true
