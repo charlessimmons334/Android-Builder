@@ -39,8 +39,8 @@
       "CC": "EvaGCC-arm64/bin/aarch64-elf-gcc",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "aarch64-elf-gcc-13.0.1",
-        "CROSS_COMPILE_ARM32": "arm-eabi-gcc-13.0.1",
+        "CROSS_COMPILE": "aarch64-elf-gcc-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-gcc-",
         "LD": "EvaGCC-arm64/bin/aarch64-elf-ld",
         "AR": "EvaGCC-arm64/bin/aarch64-elf-gcc-ar",
         "NM": "EvaGCC-arm64/bin/aarch64-elf-gcc-nm",
