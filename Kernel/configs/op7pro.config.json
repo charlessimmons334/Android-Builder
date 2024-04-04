@@ -1,0 +1,59 @@
+[
+  {
+    "kernelSource": {
+      "name": "Oneplus7Pro",
+      "repo": "https://github.com/cyberknight777/nethunter_kernel_oneplus_sm8150.git",
+      "branch": "nethunter-11.0",
+      "device": "sm-8150",
+      "defconfig": "arch/arm64/configs/kali_defconfig"
+    },
+    "toolchains": [
+      {
+        "repo": "https://github.com/Dhruvgera/EvaGCC-arm64",
+        "branch": "master",
+        "name": "EvaGCC-arm64",
+        "binaryEnv": ["./bin"]
+      }
+    ],
+{
+        "repo": "https://github.com/Dhruvgera/EvaGCC-arm",
+        "branch": "master",
+        "name": "EvaGCC-arm",
+        "binaryEnv": ["./bin"]
+      }
+    ],
+ "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
+        "binaryEnv": ["./bin"]
+      },
+      {
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "EvaGCC-arm64/bin/aarch64-elf-gcc",
+      "externalCommands": {
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE": "aarch64-elf-gcc-13.0.1",
+        "CROSS_COMPILE_ARM32": "arm-eabi-gcc-13.0.1",
+        "LD": "EvaGCC-arm64/bin/aarch64-elf-ld",
+        "AR": "EvaGCC-arm64/bin/aarch64-elf-gcc-ar",
+        "NM": "EvaGCC-arm64/bin/aarch64-elf-gcc-nm",
+        "OBJCOPY": "EvaGCC-arm64/bin/aarch64-elf-objcopy",
+        "OBJDUMP": "EvaGCC-arm64/bin/aarch64-elf-objdump",
+        "READELF": "EvaGCC-arm64/bin/aarch64-elf-readelf",
+        "OBJSIZE": "EvaGCC-arm64/bin/aarch64-elf-size",
+        "STRIP": "EvaGCC-arm64/bin/aarch64-elf-strip",
+        "LDGOLD": "EvaGCC-arm64/bin/aarch64-elf-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+    },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
