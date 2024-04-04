@@ -5,7 +5,7 @@
       "repo": "https://github.com/charlessimmons334/android_kernel_samsung_gto_smt295.git",
       "branch": "lineageOS-17.1",
       "device": "SM-T295",
-      "defconfig": "arch/arm64/configs/nethunter_defconfig"
+      "defconfig": "nethunter_defconfig"
     },
     "toolchains": [
       {
