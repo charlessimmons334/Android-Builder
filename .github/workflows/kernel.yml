@@ -27,6 +27,7 @@ jobs:
           echo "CONFIGS<<EOF" >> $GITHUB_OUTPUT
           jq -s '[.[][]]' Kernel/configs/*.config.json >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
+          shell: /usr/bin/bash -e {0}
 
       # Set compile time.
       - name: ⏰ Set builddate
