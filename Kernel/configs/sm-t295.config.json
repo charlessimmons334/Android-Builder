@@ -36,16 +36,16 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-",
-        "CROSS_COMPILE_ARM32": "gcc-arm-c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad/bin/arm-eabi-",
-        "LD": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-ld.lld",
-        "AR": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-ar",
-        "NM": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-nm",
-        "OBJCOPY": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-objcopy",
-        "OBJDUMP": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-objdump",
-        "READELF": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-readelf",
-        "OBJSIZE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-size",
-        "STRIP": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-strip"
+        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "LD": "aarch64-elf-ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "aarch64-elf-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip"
       }
     },
     "AnyKernel3": {
