@@ -12,7 +12,7 @@
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android10-release",
         "name": "gcc-64"
-        "binaryEnv": [
+        "binaryEnv":  [
           "./bin"
         ]
       },
