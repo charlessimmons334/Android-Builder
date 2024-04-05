@@ -9,15 +9,17 @@
     },
      "toolchains": [
       {
-        "name": "gcc64",
-        "url": "https://github.com/mvaisakh/gcc-arm64/archive/1a4410a4cf49c78ab83197fdad1d2621760bdc73.zip",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+        "branch": "android10-release",
+        "name": "gcc-64"
         "binaryEnv": [
           "./bin"
         ]
       },
       {
-        "name": "gcc32",
-        "url": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+        "branch": "android10-release",
+        "name": "gcc-32"
         "binaryEnv": [
           "./bin"
         ]
@@ -36,16 +38,16 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-eabi-",
-        "LD": "aarch64-elf-ld.lld",
-        "AR": "llvm-ar",
-        "NM": "llvm-nm",
-        "OBJCOPY": "llvm-objcopy",
-        "OBJDUMP": "llvm-objdump",
-        "READELF": "aarch64-elf-readelf",
-        "OBJSIZE": "llvm-size",
-        "STRIP": "llvm-strip"
+        "LD": "aarch64-linux-androidkernel-ld",
+        "AR": "aarch64-linux-androidkernel-ar",
+        "NM": "aarch64-linux-androidkernel-nm",
+        "OBJCOPY": "aarch64-linux-androidkernel-objcopy",
+        "OBJDUMP": "aarch64-linux-androidkernel-objdump",
+        "READELF": "aarch64-linux-androidkernel-readelf",
+        "OBJSIZE": "aarch64-linux-androidkernel-size",
+        "STRIP": "aarch64-linux-androidkernel-strip"
       }
     },
     "AnyKernel3": {
