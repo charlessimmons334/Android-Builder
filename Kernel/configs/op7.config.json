@@ -1,0 +1,59 @@
+[
+  {
+    "kernelSource": {
+      "name": "Oneplus7Pro",
+      "repo": "https://github.com/charlessimmons334/nethunter_kernel_oneplus_sm8150.git",
+      "branch": "nethunter-11.0",
+      "device": "sm-8150",
+      "defconfig": "kali_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "gcc64",
+        "url": "https://github.com/mvaisakh/gcc-arm64/archive/1a4410a4cf49c78ab83197fdad1d2621760bdc73.zip",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "name": "gcc32",
+        "url": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
+        "binaryEnv": [
+          "bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
+        "binaryEnv": [
+          "bin"
+        ]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "gcc",
+      "externalCommands": {
+        "CROSS_COMPILE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "gcc-arm-c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad/bin/arm-eabi-",
+        "LD": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-ld.lld",
+        "AR": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-ar",
+        "NM": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-nm",
+        "OBJCOPY": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-objcopy",
+        "OBJDUMP": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-objdump",
+        "READELF": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-readelf",
+        "OBJSIZE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-size",
+        "STRIP": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-strip"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      }
+    },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
