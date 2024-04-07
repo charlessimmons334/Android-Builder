@@ -34,7 +34,8 @@
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-eabi-",
-        "CROSS_COMPILE_COMPAT": "arm-eabi-"
+        "CROSS_COMPILE_COMPAT": "arm-eabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-"
       }
     },
     "AnyKernel3": {
