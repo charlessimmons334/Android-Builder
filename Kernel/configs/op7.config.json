@@ -1,0 +1,48 @@
+[
+  {
+    "kernelSource": {
+      "name": "Oneplus7Pro",
+      "repo": "https://github.com/charlessimmons334/nethunter_kernel_oneplus_sm8150.git",
+      "branch": "nethunter-11.0",
+      "device": "sm-8150",
+      "defconfig": "kali_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "gcc64",
+        "url": "https://github.com/mvaisakh/gcc-arm64/archive/1a4410a4cf49c78ab83197fdad1d2621760bdc73.zip",
+        "binaryEnv": ["./bin"]
+      },
+      {
+        "name": "gcc32",
+        "url": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
+        "binaryEnv": ["./bin"]
+      },
+      {
+        "name": "proton-clang",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "binaryEnv": ["bin"]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "gcc",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "LD": "aarch64-elf-ld.lld",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+      },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
