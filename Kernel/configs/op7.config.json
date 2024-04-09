@@ -17,12 +17,6 @@
         "name": "gcc32",
         "url": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
         "binaryEnv": ["./bin"]
-      },
-      {
-        "name": "proton-clang",
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "binaryEnv": ["bin"]
       }
     ],
     "enableCcache": true,
