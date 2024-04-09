@@ -19,6 +19,12 @@
         "repo": "https://github.com/Dhruvgera/EvaGCC-arm",
         "branch": "master",
         "binaryEnv": ["bin"]
+      },
+      {
+        "name": "proton-clang",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "binaryEnv": ["bin"]
       }
     ],
     "enableCcache": true,
@@ -28,6 +34,7 @@
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-elf-",
         "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "LD": "aarch64-elf-ld.lld",
         "NM": "llvm-nm",
         "OBJCOPY": "llvm-objcopy"
