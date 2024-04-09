@@ -30,10 +30,10 @@
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "clang",
+      "CC": "gcc",
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-linux-android-4.9-",
-        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-4.9-",
         "CLANG_TRIPLE": "aarch64-linux-gnu-"
       }
     },
