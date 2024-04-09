@@ -23,7 +23,7 @@
     ],
     "enableCcache": true,
     "params": {
-      "ARCH": "aarch64",
+      "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-elf-",
