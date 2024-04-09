@@ -9,26 +9,28 @@
     },
     "toolchains": [
       {
-        "name": "gcc-arm64",
-        "url": "https://github.com/mvaisakh/gcc-arm64/archive/1a4410a4cf49c78ab83197fdad1d2621760bdc73.zip",
+        "name": "arm64",
+        "repo": "https://github.com/Dhruvgera/EvaGCC-arm64",
+        "branch": "master",
         "binaryEnv": ["bin"]
       },
       {
-        "name": "gcc-arm",
-        "url": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
+        "name": "arm32",
+        "repo": "https://github.com/Dhruvgera/EvaGCC-arm",
+        "branch": "master",
         "binaryEnv": ["bin"]
       }
     ],
     "enableCcache": true,
     "params": {
-      "ARCH": "arm64",
+      "ARCH": "aarch64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-",
-        "CROSS_COMPILE_ARM32": "gcc-arm/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad/bin/arm-eabi-",
-        "LD": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/aarch64-elf-ld.lld",
-        "NM": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-nm",
-        "OBJCOPY": "gcc-arm64-1a4410a4cf49c78ab83197fdad1d2621760bdc73/bin/llvm-objcopy"
+        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "LD": "aarch64-elf-ld.lld",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy"
       }
     },
     "AnyKernel3": {
