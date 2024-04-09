@@ -11,12 +11,12 @@
       {
         "name": "gcc64",
         "url": "https://github.com/mvaisakh/gcc-arm64/archive/1a4410a4cf49c78ab83197fdad1d2621760bdc73.zip",
-        "binaryEnv": ["/bin"]
+        "binaryEnv": ["bin"]
       },
       {
         "name": "gcc32",
         "url": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
-        "binaryEnv": ["/bin"]
+        "binaryEnv": ["bin"]
       }
     ],
     "enableCcache": true,
