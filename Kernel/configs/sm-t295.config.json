@@ -12,13 +12,13 @@
         "name": "gcc64",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android10-release",
-        "binaryEnv": ["./bin"]
+        "binaryEnv": ["bin"]
       },
       {
         "name": "gcc32",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
         "branch": "android10-release",
-        "binaryEnv": ["./bin"]
+        "binaryEnv": ["bin"]
       },
       {
         "name": "proton-clang",
