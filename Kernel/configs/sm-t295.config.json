@@ -5,7 +5,7 @@
       "repo": "https://github.com/charlessimmons334/android_kernel_samsung_gto_smt295.git",
       "branch": "Nethunter",
       "device": "SM-T295",
-      "defconfig": "nethunter_defconfig"
+      "defconfig": "gto_defconfig"
     },
     "toolchains": [
       {
