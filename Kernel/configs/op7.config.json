@@ -5,7 +5,7 @@
       "repo": "https://github.com/charlessimmons334/nethunter_kernel_oneplus_sm8150.git",
       "branch": "nethunter-11.0",
       "device": "sm-8150",
-      "defconfig": "kali_defconfig"
+      "defconfig": "oneplus7A11_defconfig"
     },
     "toolchains": [
       {
