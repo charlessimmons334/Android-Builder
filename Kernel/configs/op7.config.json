@@ -32,10 +32,10 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-elf-",
-        "CROSS_COMPILE_ARM32": "arm-eabi-",
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "LD": "aarch64-elf-ld",
+        "CROSS_COMPILE": "EvaGCC-arm64/bin/aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "EvaGCC-arm/bin/arm-eabi-",
+        "CLANG_TRIPLE": "proton-clang/bin/aarch64-linux-gnu-",
+        "LD": "proton-clang/bin/ld.lld",
         "NM": "proton-clang/bin/llvm-nm",
         "OBJCOPY": "proton-clang/bin/llvm-objcopy"
       }
