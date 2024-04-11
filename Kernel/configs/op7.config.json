@@ -35,9 +35,9 @@
         "CROSS_COMPILE": "aarch64-elf-",
         "CROSS_COMPILE_ARM32": "arm-eabi-",
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "LD": "aarch64-elf-ld.lld",
-        "NM": "llvm-nm",
-        "OBJCOPY": "llvm-objcopy"
+        "LD": "aarch64-elf-ld",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy"
       }
     },
     "AnyKernel3": {
