@@ -9,21 +9,15 @@
     },
     "toolchains": [
       {
-        "name": "arm64",
+        "name": "aarch64",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android11-release",
         "binaryEnv": ["bin"]
       },
       {
-        "name": "arm32",
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
-        "branch": "android11-release",
-        "binaryEnv": ["bin"]
-      },
-      {
-        "name": "clang",
+        "name": "clang-r383902",
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
-        "branch": "android11-release",
+        "branch": "llvm-r383902b",
         "binaryEnv": ["bin"]
       }
     ],
@@ -32,12 +26,11 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-linux-android-4.9-",
-        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-4.9-",
+        "CROSS_COMPILE": "aarch64-linux-androidkernel-",
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "LD": "ld.lld",
-        "NM": "llvm-nm",
-        "OBJCOPY": "llvm-objcopy"
+        "LD": "clang-r383902/bin/ld.lld",
+        "NM": "clang-r383902/bin/llvm-nm",
+        "OBJCOPY": "clang-r383902/bin/llvm-objcopy"
       }
     },
     "AnyKernel3": {
