@@ -10,14 +10,14 @@
     "toolchains": [
       {
         "name": "arm64",
-        "repo": "https://github.com/mvaisakh/gcc-arm64.git",
-        "branch": "gcc-master",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+        "branch": "android11-release",
         "binaryEnv": ["bin"]
       },
       {
         "name": "arm32",
-        "repo": "https://github.com/mvaisakh/gcc-arm.git",
-        "branch": "gcc-master",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+        "branch": "android11-release",
         "binaryEnv": ["bin"]
       },
       {
@@ -32,8 +32,8 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-elf-",
-        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "CROSS_COMPILE": "aarch64-linux-android-4.9-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-4.9-",
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "LD": "ld.lld",
         "NM": "llvm-nm",
