@@ -1,0 +1,50 @@
+[
+  {
+    "kernelSource": {
+      "name": "Oneplus7Pro",
+      "repo": "https://github.com/charlessimmons334/op7.git",
+      "branch": "blu_spark-11",
+      "device": "sm-8150",
+      "defconfig": "blu_spark_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "arm64",
+        "repo": "https://github.com/mvaisakh/gcc-arm64.git",
+        "branch": "gcc-master",
+        "binaryEnv": ["bin"]
+      },
+      {
+        "name": "arm32",
+        "repo": "https://github.com/mvaisakh/gcc-arm.git",
+        "branch": "gcc-master",
+        "binaryEnv": ["bin"]
+      },
+      {
+        "name": "clang",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "android11-release",
+        "binaryEnv": ["bin"]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "LD": "ld.lld",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+      },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
