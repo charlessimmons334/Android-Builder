@@ -1,0 +1,18 @@
+{
+  "name": "my-project-devcontainer"
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+      "ghcr.io/devcontainers-community/features/llvm:3": {
+           "version": "latest"  
+      }
+      "ghcr.io/wxw-matt/devcontainer-features/script_runner:0": {
+           "version": "latest"
+      }
+     "ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {
+           "version": "latest"
+     }
+     "ghcr.io/devcontainers-contrib/features/poppler-utils-apt-get:1": {
+           "version": "latest"    
+     } 
+  }
+}
