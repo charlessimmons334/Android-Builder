@@ -28,9 +28,9 @@
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-linux-androidkernel-",
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "LD": "clang-r383902/bin/ld.lld",
-        "NM": "clang-r383902/bin/llvm-nm",
-        "OBJCOPY": "clang-r383902/bin/llvm-objcopy"
+        "LD": "ld.lld",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy"
       }
     },
     "AnyKernel3": {
