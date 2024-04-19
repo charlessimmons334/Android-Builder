@@ -12,13 +12,13 @@
         "name": "aarch64",
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android11-release",
-        "binaryEnv": ["bin"]
+        "binaryEnv": ["./bin"]
       },
       {
         "name": "clang-r383902",
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
         "branch": "llvm-r383902b",
-        "binaryEnv": ["bin"]
+        "binaryEnv": ["./bin"]
       }
     ],
     "enableCcache": true,
@@ -37,7 +37,7 @@
       "use": true,
       "release": true
       },
-    "enableKernelSU": true,
+    "enableKernelSU": false,
     "enableLXC": false
   }
 ]
