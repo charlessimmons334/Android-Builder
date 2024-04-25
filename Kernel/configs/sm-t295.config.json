@@ -1,0 +1,51 @@
+[
+  {
+    "kernelSource": {
+      "name": "gto",
+      "repo": "https://github.com/charlessimmons334/android_kernel_samsung_gto_smt295.git",
+      "branch": "lineageOS-17.1",
+      "device": "SM-T295",
+      "defconfig": "nethunter_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "gcc64",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+        "branch": "android10-release",
+        "binaryEnv": ["./bin"]
+      },
+      {
+        "name": "gcc32",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+        "branch": "android10-release",
+        "binaryEnv": ["./bin"]
+      },
+      {
+        "name": "clang",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "clang-r353983c"
+        "binaryEnv": ["./bin"]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "LD": "ld.lld",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+      }
+    },
+    "enableKernelSU": true,
+    "enableLXC": false
+  }
+]
