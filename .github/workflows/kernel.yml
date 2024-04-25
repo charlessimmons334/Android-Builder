@@ -89,7 +89,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get full-upgrade
-          sudo apt-get install ca-certificates xz-utils mkbootimg cpio device-tree-compiler git git-lfs -y
+          sudo apt-get install ca-certificates xz-utils mkbootimg cpio device-tree-compiler git git-lfs openssl -y
           sudo apt-get install curl git ftp lftp wget libarchive-tools ccache python2 python2-dev python3 -y
           sudo apt-get install pngcrush schedtool dpkg-dev liblz4-tool make optipng maven device-tree-compiler -y
           sudo apt-get install libc6-dev-i386 lib32ncurses5-dev libx11-dev lib32z-dev libgl1-mesa-dev xsltproc -y
