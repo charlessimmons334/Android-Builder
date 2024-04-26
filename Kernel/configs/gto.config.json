@@ -41,17 +41,17 @@
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-        "LD": "ld.lld",
-        "AR": "llvm-ar",
-        "NM": "llvm-nm",
-        "OBJCOPY": "llvm-objcopy",
-        "OBJDUMP": "llvm-objdump",
-        "READELF": "llvm-readelf",
-        "OBJSIZE": "llvm-size",
-        "STRIP": "llvm-strip",
-        "LDGOLD": "aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "llvm-ar",
-        "LLVM_DIS": "llvm-dis"
+        "LD": "clang-r353983c/bin/ld.lld",
+        "AR": "lclang-r353983c/bin/lvm-ar",
+        "NM": "clang-r353983c/bin/llvm-nm",
+        "OBJCOPY": "clang-r353983c/bin/llvm-objcopy",
+        "OBJDUMP": "clang-r353983c/bin/llvm-objdump",
+        "READELF": "clang-r353983c/bin/llvm-readelf",
+        "OBJSIZE": "clang-r353983c/bin/llvm-size",
+        "STRIP": "clang-r353983c/bin/llvm-strip",
+        "LDGOLD": "clang-r353983c/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "clang-r353983c/bin/llvm-ar",
+        "LLVM_DIS": "clang-r353983c/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
