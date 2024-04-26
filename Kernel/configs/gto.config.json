@@ -10,8 +10,8 @@
     "toolchains": [
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
-        "branch": "r353983c",
-        "name": "clang",
+        "branch": "android10-release",
+        "name": "clang-r353983c",
         "binaryEnv": [
           "./bin"
         ]
