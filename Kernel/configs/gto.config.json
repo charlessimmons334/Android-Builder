@@ -9,11 +9,11 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "llvm-r353983c",
+        "name": "clang-r353983c",
         "binaryEnv": [
-          "bin"
+          "./bin"
         ]
       },
       {
@@ -21,7 +21,7 @@
         "branch": "lineage-17.1",
         "name": "aarch64",
         "binaryEnv": [
-          "bin"
+          "./bin"
         ]
       },
       {
@@ -29,7 +29,7 @@
         "branch": "lineage-17.1",
         "name": "arm",
         "binaryEnv": [
-          "bin"
+          "./bin"
         ]
       }
     ],
@@ -41,17 +41,17 @@
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip",
-        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+        "LD": "ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis"
       }
     },
     "AnyKernel3": {
