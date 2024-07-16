@@ -28,7 +28,7 @@
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc-arm64",
+      "CC": "gcc",
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-elf-gcc-",
         "CROSS_COMPILE_ARM32": "arm-eabi-",
