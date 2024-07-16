@@ -1,0 +1,45 @@
+[
+  {
+    "kernelSource": {
+      "name": "OP7",
+      "repo": "https://github.com/cyberknight777/nethunter_kernel_oneplus_sm8150.git",
+      "branch": "nethunter-11.0",
+      "device": "GM1917",
+      "defconfig": "kali_defconfig"
+    },
+    "toolchains": [
+      {
+        "repo": "https://github.com/mvaisakh/gcc-arm64.git",
+        "branch": "gcc-master",
+        "name": "gcc-arm64",
+        "binaryEnv": [
+          "./bin"
+        ]
+      },
+      {
+        "repo": "https://github.com/mvaisakh/gcc-arm.git",
+        "branch": "gcc-master",
+        "name": "gcc-arm",
+        "binaryEnv": [
+          "./bin"
+        ]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "gcc-arm64",
+      "externalCommands": {
+        "CROSS_COMPILE": "aarch64-elf-gcc-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-",
+        "LD": "aarch64-elf-ld.lld"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+    },
+    "enableKernelSU": false,
+    "enableLXC": false
+  }
+]
