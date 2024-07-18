@@ -9,7 +9,7 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/mvaisakh/gcc-arm64.git",
+        "repo": "https://github.com/Sepatu-Bot/arm64-gcc.git",
         "branch": "gcc-master",
         "name": "gcc-arm64",
         "binaryEnv": [
@@ -27,12 +27,11 @@
     ],
     "enableCcache": true,
     "params": {
-      "ARCH": "arm64",
+      "ARCH": "aarch64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-elf-gcc-",
-        "CROSS_COMPILE_ARM32": "arm-eabi-",
-        "LD": "aarch64-elf-ld.lld"
+        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "arm-eabi-"
       }
     },
     "AnyKernel3": {
