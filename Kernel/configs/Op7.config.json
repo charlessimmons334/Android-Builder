@@ -17,9 +17,9 @@
         ]
       },
       {
-        "repo": "https://github.com/mvaisakh/gcc-arm.git",
+        "repo": "https://github.com/Sepatu-Bot/gcc-arm32.git",
         "branch": "gcc-master",
-        "name": "gcc-arm",
+        "name": "gcc-arm32",
         "binaryEnv": [
           "./bin"
         ]
