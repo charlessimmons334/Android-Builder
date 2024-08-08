@@ -11,15 +11,15 @@
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "android11-release",
-        "name": "gcc",
+        "name": "aarch64-linux-androidkernel",
         "binaryEnv": [
           "./bin"
         ]
       },
       {
-        "repo": "https://github.com/Sepatu-Bot/gcc-arm32.git",
-        "branch": "gcc-master",
-        "name": "gcc-arm32",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+        "branch": "android11-release",
+        "name": "arm-linux-androideabi",
         "binaryEnv": [
           "./bin"
         ]
@@ -32,7 +32,7 @@
       "externalCommands": {
         "CROSS_COMPILE": "aarch64-linux-androidkernel-",
         "CLANG_TRIPLE": "arch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-eabi-"
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-"
       }
     },
     "AnyKernel3": {
