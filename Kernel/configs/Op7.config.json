@@ -9,9 +9,9 @@
     },
     "toolchains": [
       {
-        "repo": "https://github.com/Sepatu-Bot/arm64-gcc.git",
-        "branch": "gcc-master",
-        "name": "gcc-arm64",
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+        "branch": "android11-release",
+        "name": "gcc",
         "binaryEnv": [
           "./bin"
         ]
@@ -30,7 +30,8 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-elf-",
+        "CROSS_COMPILE": "aarch64-linux-androidkernel-",
+        "CLANG_TRIPLE": "arch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "arm-eabi-"
       }
     },
@@ -39,6 +40,6 @@
       "release": true
     },
     "enableKernelSU": true,
-    "enableLXC": true
+    "enableLXC": false
   }
 ]
