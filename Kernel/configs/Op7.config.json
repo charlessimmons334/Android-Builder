@@ -9,17 +9,17 @@
     },
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android11-release",
-        "name": "aarch64-linux-androidkernel",
+        "repo": "https://github.com/theradcolor/aarch64-linux-gnu",
+        "branch": "master",
+        "name": "aarch64-linux-gnu",
         "binaryEnv": [
           "./bin"
         ]
       },
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
-        "branch": "android11-release",
-        "name": "arm-linux-androideabi",
+        "repo": "https://github.com/theradcolor/arm-linux-gnueabi",
+        "branch": "master",
+        "name": "https://github.com/theradcolor/arm-linux-gnueabi",
         "binaryEnv": [
           "./bin"
         ]
@@ -30,8 +30,8 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommands": {
-        "CROSS_COMPILE": "aarch64-linux-androidkernel-",
-        "CLANG_TRIPLE": "arch64-linux-gnu-",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-"
       }
     },
