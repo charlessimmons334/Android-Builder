@@ -23,10 +23,18 @@
         ]
       },
       {
-        "name": "GCC aarch64/arm32 (optional fallback)",
-        "url": "https://github.com/mvaisakh/gcc-arm64 & https://github.com/mvaisakh/gcc-arm",
+        "name": "GCC 64bit",
+        "repo": "https://github.com/mvaisakh/gcc-arm64",
+        "branch": "master",
         "binaryEnv": [
-          "CROSS_COMPILE=aarch64-linux-gnu-",
+          "CROSS_COMPILE=aarch64-linux-gnu-"
+        ]
+      },
+      {
+        "name": "GCC 32bit",
+        "repo": "https://github.com/mvaisakh/gcc-arm",
+        "branch": "master",
+        "binaryEnv": [
           "CROSS_COMPILE_ARM32=arm-linux-gnueabi-"
         ]
       }
