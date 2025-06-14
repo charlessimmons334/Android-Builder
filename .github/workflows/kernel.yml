@@ -92,7 +92,7 @@ jobs:
           sudo apt-get install ca-certificates xz-utils mkbootimg cpio device-tree-compiler git git-lfs openssl -y
           sudo apt-get install curl git ftp lftp wget libarchive-tools ccache python3-dev python3 -y
           sudo apt-get install pngcrush schedtool dpkg-dev liblz4-tool make optipng maven device-tree-compiler -y
-          sudo apt-get install libc6-dev-i386 lib32ncurses5-dev libx11-dev lib32z-dev libgl1-mesa-dev xsltproc -y
+          sudo apt-get install libc6-dev-i386 libx11-dev lib32z-dev libgl1-mesa-dev xsltproc -y
           sudo apt-get install libxml2-utils libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools lzop flex tree -y
           sudo apt-get install build-essential bc gcc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev libfl-dev -y
           sudo apt-get install pwgen libswitch-perl policycoreutils minicom libxml-sax-base-perl libxml-simple-perl -y
