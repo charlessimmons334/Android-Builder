@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "NetErnels",
       "repo": "https://github.com/NetErnels/android_kernel_oneplus_sm8250",
-      "branch": "main",
+      "branch": "R",
       "device": "unified_op8",
       "defconfig": "neternels_defconfig"
     },
