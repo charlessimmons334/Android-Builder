@@ -25,7 +25,6 @@
       {
         "name": "GCC-64bit",
         "repo": "https://github.com/mvaisakh/gcc-arm64/archive/1a4410a4cf49c78ab83197fdad1d2621760bdc73.zip",
-        "branch": "master",
         "binaryEnv": [
           "CROSS_COMPILE=aarch64-linux-gnu-"
         ]
@@ -33,7 +32,6 @@
       {
         "name": "GCC-32bit",
         "repo": "https://github.com/mvaisakh/gcc-arm/archive/c8b46a6ab60d998b5efa1d5fb6aa34af35a95bad.zip",
-        "branch": "master",
         "binaryEnv": [
           "CROSS_COMPILE_ARM32=arm-linux-gnueabi-"
         ]
